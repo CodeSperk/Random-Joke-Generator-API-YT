@@ -13,7 +13,8 @@ const options = {
 const apiUrl = "https://api.api-ninjas.com/v1/dadjokes?limit=1"
 
 async function getJoke(){
-  jokeEl.innerText = "Updating...";
+  try {
+    jokeEl.innerText = "Updating...";
 
   btnEl.disabled = true;
   btnEl.innerText = "Loading...";
@@ -24,6 +25,12 @@ async function getJoke(){
 
   btnEl.disabled = false;
   btnEl.innerText = "Tell me a Joke";
+  } catch (error) {
+    jokeEl.innerText = "An Error Happened. Please, Try again Later";
+    btnEl.disabled = false;
+    btnEl.innerText = "Tell me a joke";
+  }
+  
 }
 
 btnEl.addEventListener("click", getJoke)
