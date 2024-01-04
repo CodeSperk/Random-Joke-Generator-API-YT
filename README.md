@@ -1,7 +1,6 @@
 ## Live Link: [Random Jokes Generator](https://codesperk.github.io/random-joke-generator/)
 
-![Project Image](https://i.ibb.co/wMmRF8G/random-joke-generator.png)
-
+[![Project Image](https://i.ibb.co/wMmRF8G/random-joke-generator.png)](https://codesperk.github.io/random-joke-generator/)
 
 ## Key Features
 
